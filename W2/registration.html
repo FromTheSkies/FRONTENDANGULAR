@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body{
+            padding: 24px;
+            display: grid;
+            place-content: center;
+        }
+        label{
+            display: block;
+            padding-top: 10px;
+        }
+        h{
+            color:darkorchid;
+        }
+        fieldset{
+            border-color: purple ;
+        }
+    </style>
+</head>
+<body>
+    <h style="font-size:60px">Form of Registration</h>
+        <fieldset>
+            
+            <legend>UserInfo</legend>
+            <label for = "username">Name:</label>
+            <input type = "text" id = "username" placeholder="Required" required/>
+
+            <label for = "username">Surname:</label>
+            <input type = "text" id = "username" placeholder="Required" required/>
+        
+            <label for = "radioname">I support LGBT:</label>
+            <input type = "radio" id = "radioname">
+            <label for = "radioname">I support LGBT AGRESSIVELY:</label>
+            <input type = "radio" id = "radioname">
+        
+            <label for = "emailname">Email:</label>
+            <input type = "email" id = "emailname" placeholder="Required" required/>
+            <label for = "passwordname">Password:</label>
+            <input type = "password" id = "passwordname" placeholder="Required" required/>
+        
+            <label for = "datetime">Birthday:</label>
+            <input type = "date" id = "datetime" >
+    
+            <label for = "telnumber">Telephone number:</label>
+            <input type = "tel" id = "telnumber" placeholder="Required" required/>
+
+            <label for = "checkboxname">I'm agree with terms and conditions of company:</label>
+            <input type = "checkbox" id = "checkboxname">
+
+        </fieldset>
+        <fieldset>
+            <legend>Where do you live?</legend>
+            <select name="country" id="">
+                <option value="maverick">I'm Maverick</option>
+                <option value="vakanda">Vakanda</option>
+                <option value="kazakhstan">Kazakhstan</option>
+                <option value="saturn">Saturn</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Other information:</legend>
+            <label for = "age">Age</label>
+            <input type = "number" id = "number" name = "age" step = "1" min = "18" max = "120">
+
+            <label for = "color">Pick your favourite color except pink:</label>
+            <input type = "color" id = "color" name = "color">
+
+            <label for = "rating">Rate from left to right, how you describe your life</label>
+            <input type = "range" id = "range" name = "range">
+        </fieldset>
+        <fieldset>
+            <legend>Description</legend>
+            <label for = "description">Decribe yourself as person:</label>
+            <textarea id = "text" name = "text" cols = "45" rows = "20"></textarea>
+        </fieldset>
+    <button style = "background-color: red" = "reset">Reset</button>
+    <button style = "background-color: green" =  "window.open('/Users/endurance/Desktop/ADS/FRONTEND/W2/index.html')">Registrate</button>
+    
+    </form>
+    
+    
+</body>
+</html>
