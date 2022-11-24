@@ -11,24 +11,43 @@
             display: grid;
             place-content: center;
         }
-        h{
+        h1{
             color: purple;
+            font-size: 60px;
         }
         label{
             display: block;
             padding-top: 10px;
         }
+
+        .btn {
+            padding: 12px;
+            border: none;
+            margin-top: 8px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+        }
+
+        .login-btn {
+            background-color: green;
+        }
+
+        .register-btn {
+            background-color: red;
+        }
     </style>
 </head>
 <body>
-    <h style="font-size:60px">Login to Account</h>
+    <h1>Login to Account</h1>
     <fieldset>
-        <label for = "login">Login:</label>
-        <input type = "text" placeholder="Enter your Login">
-        <label for = "password">Password:</label>
-        <input type = "password" placeholder="Enter your Password">
+        <label for="login">Login:</label>
+        <input type="text" placeholder="Enter your Login" id="login">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter your Password" id="password">
     </fieldset>
-    <button style = "background-color: green"="window.open('/Users/endurance/Desktop/ADS/FRONTEND/W2/main.html')">Login</button>
-    <button style = "background-color: red"="window.open('/Users/endurance/Desktop/ADS/FRONTEND/W2/registration.html')">Still don't have account?</button>
+    <button class="btn login-btn"><a href="main.html">Login</a></button>
+    <button class="btn register-btn"><a href="registration.html">Still don't have account?</a></button>
 </body>
 </html>
