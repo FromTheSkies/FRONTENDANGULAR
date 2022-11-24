@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Impreza</title>
+    <style>
+        h{
+            place-content: center;
+            display: grid;
+        }
+        fieldset{
+            border-color: blueviolet;
+        }
+        button{
+            padding-right: 54px;
+        }
+        #impreza{
+            width: 250px;
+            height: 40px;
+            object-position: left top;
+        }
+        #table1{
+            width: 550px;
+            height: 200px;
+            width: 50%;
+            border: 2px solid black;
+            border-color:darkorchid;
+        }
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        #head1{
+            place-content: left;
+        }
+        h4{
+            font-size: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h>Hello</h>
+    <img id = "impreza" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Impreza_Logo.svg/1280px-Impreza_Logo.svg.png" alt="OOPS,SMTH WENT WRONG!" >
+    <fieldset>
+        <h style="font-size: 80px">Home page</h>
+    </fieldset>
+    <fieldset>
+        <button class="btn login-btn" id = "registrate"><a href="index.html">Logout</a></button>
+        <button>About us</button>
+        <button>Menu</button>
+    </fieldset>
+    <h1>If you will buy our cars you'll get:</h1>
+    <ul>
+        <li>Garrancy</li>
+        <li>Quality</li>
+        <li>Enjoyment!</li>
+    </ul>
+    <h2>Most important things in man's life</h2>
+    <ol>
+        <li>His brothers</li>
+        <li>His Car</li>
+        <li>His Life</li>
+        <li>His Wife</li>
+
+    </ol>
+    <h4>Our cars -></h4>
+    <table id = "table1">
+        <tr>
+          <th id = "head1">Model</th>
+          <th id = "head2">Power</th>
+          <th id = "head3">Price</th>
+        </tr>
+        <tr>
+          <td>Impreza Coop</td>
+          <td>500hp</td>
+          <td>23000$</td>
+        </tr>
+        <tr>
+          <td>Impreza Victus</td>
+          <td>456hp</td>
+          <td>53500$</td>
+        </tr>
+    </table>
+    <h3>Description of Models</h3>
+    <dl>
+        <dt>Impreza Coop:</dt>
+        <dd>- Powerful, word of sport</dd>
+        <dt>Impreza Victus:</dt>
+        <dd>- Solid, for true gentlemen</dd>
+      </dl>
+
+
 </body>
 </html>
