@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: grey;
+            }
+        }
+        #app{ 
+            background-color:lightblue; 
+            display: grid;
+            place-content: center;
+            height: 100px;
+            font-size: 50px;
+            width: 100%;
+        }
+        #terminal{
+            background-color:lightblue; 
+            height: 200px;
+            font-size: 25px;
+            position: fixed; 
+            bottom: 0;
+            width:99%;
+            
+        }
+        #explorer{
+            background-color:royalblue;
+            left: 8px;
+            top:109px;
+            width: 200px;
+            position: fixed; 
+            height: 62%;
+            display: grid;
+            /* place-content:top-cente; */
+            text-align: center;
+        }
+        #flex1{
+            /* display: flex; */
+            flex: 1;
+            /* display: grid; */
+            text-align: center;
+            /* left: 700px; */
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id = "app">Vscode</header>
+    <main class="Site-content">Content</main>
+    <footer id = "terminal">-----/Users/endurance/Desktop/ADS/FRONTEND/W3/inspectCode.html</footer>
+    <sidebar id = "explorer">Files</sidebar>
+    <div class="flex-container" id = "flex1">
+        <div>
+            int a,b;
+        </div>
+        <div>
+        cin>>a>>b;
+        </div>
+        <div>
+        cout<<"Hello world, a + b";
+        </div>      
+    </div>
+    <div class="flex-container" id = "flex2">
+        <div>
+            a.html
+        </div>
+        <div>
+            b.html
+        </div>
+        <div>
+            c.html
+        </div>      
+    </div>
+</body>
+</html>

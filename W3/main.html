@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impreza</title>
+    <style>
+        a:hover {
+        color: #FF00FF;
+        }
+        a:active {
+        color:chartreuse;
+        }
+        body{
+            background-image: url("/Users/endurance/Downloads/wallpaperbetter (7).jpg");
+            background-size: cover;
+        }
+        h{
+            place-content: center;
+            display: grid;
+        }
+        fieldset{
+            border-color: blueviolet;
+        }
+        button{
+            padding-right: 54px;
+        }
+        #impreza{
+            width: 250px;
+            height: 40px;
+            object-position: left top;
+        }
+        #table1{
+            width: 550px;
+            height: 200px;
+            width: 50%;
+            border: 2px solid black;
+            border-color:darkorchid;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        #head1{
+            place-content: left;
+        }
+        h4{
+            font-size: 50px;
+        }
+        div p{
+            color: blueviolet;
+            font-size: 21px;
+        }
+        div2 > p{
+            color: crimson;
+            font-size: 42px;
+        }
+        div + p{
+            color: steelblue;
+            font-size: 65px;
+        }
+        div ~ p3{
+            color: bisque;
+        }
+        .listochek li:first-child::first-line{
+            color: cadetblue;
+        }
+        .listochek li:first-letter{
+            font-size: 176px;
+        }
+    </style>
+</head>
+<body>
+    <img id = "impreza" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Impreza_Logo.svg/1280px-Impreza_Logo.svg.png" alt="OOPS,SMTH WENT WRONG!" >
+    <fieldset>
+        <h style="font-size: 80px">Home page</h>
+    </fieldset>
+    <!-- buttons -->
+    <fieldset>
+        <button class="btn login-btn" id = "registrate"><a href="index.html">Logout</a></button>
+        <button class="btn login-btn" id = "menu"><a href="inspectCode.html">Inspect Code</a></button>
+        <button>About us</button>
+        <!-- <button>Menu</button> -->
+    </fieldset>
+    <h1>If you will buy our cars you'll get:</h1>
+    <ul class="unorderedListochek">
+        <li>Garrancy</li>
+        <li>Quality</li>
+        <li>Enjoyment!</li>
+    </ul>
+    <h2>Most important things in man's life</h2>
+    <ol class="listochek">
+        <li>His brothers</li>
+        <li>His Car</li>
+        <li>His Life</li>
+        <li>His Wife</li>
+
+    </ol>
+    <div>
+        <section>
+            <p>Today is a good day to buy our cars</p>
+            <p>Your style will definitely get better after buying our cars</p>
+            <p>Buy our car for yourself, make happy all family!</p>
+        </section>
+    </div>
+    <p3>GIVE UP AND BUY OUR CARS!</p3>
+    <p>If you are thinking what do you need more: lungs or car, just think what case you will buy to this car</p>
+    <p style="color:blue;">Say goodbye to your problems!</p>
+    <div2>
+        <p>Today is a good day to buy our cars</p>
+        <section>
+            <p>Buy our car for yourself, make happy all family!</p>
+        </section>
+        <p>Your style will definitely get better after buying our cars</p>
+
+    </div2>
+    <p3>DONT GIVE UP AND BUY OUR CARS!</p3>
+
+    <h4>Our cars -></h4>
+    <table id = "table1">
+        <tr>
+          <th id = "head1">Model</th>
+          <th id = "head2">Power</th>
+          <th id = "head3">Price</th>
+        </tr>
+        <tr>
+          <td>Impreza Coop</td>
+          <td>500hp</td>
+          <td>23000$</td>
+        </tr>
+        <tr>
+          <td>Impreza Victus</td>
+          <td>456hp</td>
+          <td>53500$</td>
+        </tr>
+    </table>
+    <h3>Description of Models</h3>
+    <dl>
+        <dt>Impreza Coop:</dt>
+        <dd>- Powerful, word of sport</dd>
+        <dt>Impreza Victus:</dt>
+        <dd>- Solid, for true gentlemen</dd>
+      </dl>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    padding: 24px;
+    display: grid;
+    place-content: center;
+}
+h1{
+    color: purple;
+    font-size: 60px;
+}
+label{
+    display: block;
+    padding-top: 10px;
+}
+
+.btn {
+    padding: 12px;
+    border: none;
+    margin-top: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: green;
+}
+
+.register-btn {
+    background-color: red;
+}
+
+div:hover {
+    background-color: #F89B4D;
+}
