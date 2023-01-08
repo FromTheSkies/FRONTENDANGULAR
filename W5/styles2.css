@@ -1,0 +1,30 @@
+h{
+    font-size: 50px;
+    display: grid;
+    place-content: center;
+}
+#mane{
+    width: 700px;
+    height: 700px;
+    position:relative; 
+    left:340px;
+    border: 1px solid rgb(91, 89, 89);
+}
+#result{
+    width: 700px;
+    height: 90px;
+}
+#button{
+    width: 150px;
+    height: 130px;
+    /* top:160px; */
+    padding: 10px;
+    margin: 10px;
+}
+#buttonAction{
+    width: 160px;
+    height: 110px;
+    /* top:160px; */
+    padding: 10px;
+    margin: 10px;
+}
