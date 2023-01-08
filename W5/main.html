@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles2.css">  
+</head>
+<body>
+    <h>Calculator</h>
+    <fieldset id = "mane">
+
+        <div class="row">
+            <input id = "result" type="text">
+        </div>
+
+        <div class="row">
+            <button id = "button" onclick="display('1')">1</button>
+            <button id = "button" onclick="display('2')">2</button>
+            <button id = "button" onclick="display('3')">3</button>
+            <button id = "buttonAction" onclick="display('+')">+</button>
+            <button id = "buttonAction" onclick="square()">sqrt</button>
+        </div>
+
+        <div class="row">
+            <button id = "button" onclick="display('4')">4</button>
+            <button id = "button" onclick="display('5')">5</button>
+            <button id = "button" onclick="display('6')">6</button>
+            <button id = "buttonAction" onclick="display('-')">-</button>
+            <button id = "buttonAction" onclick="sin()">sin</button>
+        </div>
+
+        <div class="row">
+            <button id = "button" onclick="display('7')">7</button>
+            <button id = "button" onclick="display('8')">8</button>
+            <button id = "button" onclick="display('9')">9</button>
+            <button id = "buttonAction" onclick="display('*')">*</button>
+            <button id = "buttonAction" onclick="cos()">cos</button>
+        </div>
+
+        <div class="row">
+            <button id = "button" onclick="clearDisplay()">AC</button>
+            <button id = "button" onclick="display('0')">0</button>
+            <button id = "button" onclick="calc()">=</button>
+            <button id = "buttonAction" onclick="display('/')">/</button>
+            <button id = "buttonAction" onclick="display('%')">%</button>
+        </div>
+    </fieldset>
+    <script src="./calculator.js"></script>
+</body>
+</html>
