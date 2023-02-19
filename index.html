@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW7posts</title>
+    <style>
+        .posthead{
+            overflow: hidden;
+            background-image: linear-gradient(20deg, #e23151, #f56977, #c189fc,#a44fff,#7112ff);
+            position: fixed; 
+            top: 10px;
+            height: 100px;
+            width: 99%;
+            z-index: 2;
+            border-radius: 25px;
+            box-shadow: 0 0 15px black;
+        }
+        .comhead{
+            overflow: hidden;
+            background-image: linear-gradient(20deg, #e23151, #f56977, #c189fc,#a44fff,#7112ff);
+            position: fixed; 
+            top: 10px;
+            height: 100px;
+            width: 99%;
+            z-index: 2;
+            border-radius: 25px;
+            box-shadow: 0 0 15px black;
+        }
+
+        .postbox{
+            background-image: linear-gradient(20deg, #e23151, #f56977, #c189fc,#a44fff,#7112ff);
+            width: 700px;
+            left: 305px;
+            border-radius: 25px;
+            position: relative;
+            margin: 50px 0px;
+            box-shadow: 0 0 15px black;
+        }
+        .post-item{
+            margin: 50px 50px;
+            margin-top: 5px;
+            list-style: none;
+
+        }
+        .gotocomments{
+            background-color: transparent;
+            border: none;
+        }
+        .title{
+            font-family:"BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+        }
+        .email{
+            font-family:"BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+            color: #7112ff;
+        }
+        .info{
+            font-family:"BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+        }
+        #fetch{
+            font-family:"BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+            position: relative;
+            top:-10px;
+            border-radius: 10px;
+            left:900px;
+        }
+        #fetch:active{
+            background-color: black;
+        }
+        #fetch:hover{
+            cursor:pointer
+        }
+        #fetch:active {
+            background-color: #dddddd;
+            
+        }
+        #opencomment:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class = "head">
+        <div class = "posthead">
+            <a href = "http://127.0.0.1:5500/FRONTEND/W7/index.html"><img style = "position:relative;left:610px;width: 200px;height: 90px;"src = 'https://i.ibb.co/0h49hhC/5a4e432a2da5ad73df7efe7a.png'></a>
+            <button style = "position: relative;top:-35px;" onclick="activatePosts()">Activate</button>
+        </div>
+    </header>
+    <template id = "single-post">
+        <fieldset class = "postbox">
+            <li class = "post-item">
+                <h2 class = "title"></h2>
+                <p class = "info"></p>
+                <!-- <button onclick = "activateComments()" id = "opencomment" style = "border:none;background:transparent;position:relative;top:20px;left: 550px;"><a href = "comments.html" target="_self"><img style = "position:relative;float:right;width: 30px;height: 30px;" src ="https://i.ibb.co/S3FwC9k/instagram-comment-icon.png"></a></button> -->
+                <button onclick = "activateComments()" id = "opencomment" style = "border:none;background:transparent;position:relative;top:20px;left: 550px;"><img style = "position:relative;float:right;width: 30px;height: 30px;" src ="https://i.ibb.co/S3FwC9k/instagram-comment-icon.png"></button>
+
+            </li>
+        </fieldset>
+    </template>
+    <template id = "single-comment">
+        <fieldset class = "postbox">
+            <li class = "post-item">
+                <h2 class = "title" id = "big"></h2>
+                <p class = "email" id = "middle"></p>
+                <p class = "info" id = "small"></p>
+            </li>
+        </fieldset>
+    </template>
+    <middle>
+        <ul style = "position: absolute;top:200px;"class = "posts">
+
+        </ul>
+        <ul style = "position: absolute;top:200px;"class = "comments">
+
+        </ul>
+    </middle>
+    <script src="1.js"></script>
+</body>
+</html>
+
