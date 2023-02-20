@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASPI</title>
+    <link rel="icon" href="https://i.ibb.co/JmRRjXp/Logo-of-Kaspi-bank.png">
+
+
+    <style>
+        #logo{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            left: 250px;
+            top:25px;
+            text-decoration: none;
+        }
+        .head{
+            position: absolute;
+            /* background-color: rgb(219, 219, 219); */
+            box-shadow: 0px 0px 10px 0px rgb(193, 193, 193);
+            top:-10px;
+            left: -10px;
+            width: 101%;
+            height: 90px;
+            overflow: hidden;
+        }
+        #products{
+            text-decoration:none;
+            font-size:20px;
+            position: relative;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            z-index: 2;
+            left: 680px;
+            top:-94px;
+            font-weight:lighter;
+            color: gray;
+            
+        }
+        #products:hover{
+            cursor: pointer;
+            color: rgb(58, 58, 58);
+        }
+    </style>
+</head>
+<body>
+    <dev class = "head">
+        <a style = "text-decoration:none;" href = "">
+            <img id = "logo" src = "https://i.ibb.co/JmRRjXp/Logo-of-Kaspi-bank.png">
+            <p style = "text-decoration:none;color:black;font-size:25px;position: relative;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;z-index: 2;left: 300px;top:-43px;font-weight:bold;" >Kaspi.kz</p>
+        </a>
+        
+        <a id = "products" href="" >Products</a>
+    </dev>
+    <template id = "productTemplate">
+        <fieldset class = "productbox">
+            <li class = "product">
+                <img class = "image">
+                <h2 class = "name"></h2>
+                <p class = "description"></p>
+                <p class = "rating"></p>
+                <button class = "whatsapp"></button>
+                <button class = "telegram"></button>
+            </li>
+        </fieldset>
+    </template>
+    <dev class = "middle">
+        <ul>
+
+        </ul>
+    </dev>
+</body>
+</html>
+
